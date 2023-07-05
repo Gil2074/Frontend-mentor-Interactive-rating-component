@@ -8,8 +8,8 @@ function sendRating() {
     let ratingelts = document.getElementById('idrating') ;
     notification.innerHTML = myString;
     notification.setAttribute( 'class', 'text-center' );
-    document.querySelector('h2').innerHTML =`<img src="./images/illustration-thank-you.svg" alt="">`;
-    document.querySelector('h2').setAttribute( 'class', 'text-center' );
+    document.querySelector('h1').innerHTML =`<img src="./images/illustration-thank-you.svg" alt="">`;
+    document.querySelector('h1').setAttribute( 'class', 'text-center' );
     ratingelts.innerHTML = `You selected ${selectedRating} out of 5;`
     ratingelts.setAttribute( 'class', 'onlyJs' );
     document.querySelector(`input[type='submit']`).setAttribute( 'class', 'hidden' );

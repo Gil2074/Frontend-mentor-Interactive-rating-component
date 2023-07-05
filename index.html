@@ -14,6 +14,7 @@
 </head>
 
 <body>
+  <main>
   <div class="box">
     <div class="image">
       <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
@@ -22,21 +23,22 @@
           fill="#FC7614" />
       </svg>
     </div>
-    <h2>How did we do</h2>
+    <h1>How did we do</h1>
     <p id="idrating">Please let us know how we did with your support request. All feedback is appreciated
       to help us improve our offering!</p>
       <p id='notification'></p>
- <form action="" onsubmit="sendRating()">
+ <form action="rating.py" onsubmit="sendRating()">
       <div class="container">
         <div tabindex="0">1</div>
-        <div tabindex="1">2</div>
-        <div tabindex="2">3</div>
-        <div tabindex="3">4</div>
-        <div tabindex="4">5</div>
+        <div tabindex="0">2</div>
+        <div tabindex="0">3</div>
+        <div tabindex="0">4</div>
+        <div tabindex="0">5</div>
       </div>
       <input type="submit" value="Submit">
     </form>
   </div>
+</main>
   <script src="https://kit.fontawesome.com/ce12895bd6.js" crossorigin="anonymous"></script>
   <script src="./script.js"></script>
 </body>
