@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Overpass', sans-serif;
+    background-color: black;
 }
 
 .box {
@@ -15,8 +16,10 @@ body {
     border-radius: 16px;
     padding: 20px;
     position: relative;
-    inset: 0 0;
+    inset: 0 0 ;
     margin: auto;
+    top: 50vh;
+    transform: translateY(-50%);
 }
 
 .box p {
@@ -61,6 +64,7 @@ form .container div:hover{
 form .container div:focus  {
     background-color: var(--textcolor);
     color: white;
+    transition: .4s;
 }
 
 form input[type='submit'] {
@@ -77,6 +81,11 @@ form input[type='submit'] {
     height: 2.75rem;
 }
 
+
+form input[type='submit']:active {
+    background-color: white;
+    color: var(--orange)
+};
 
 img {
     display: flex;
@@ -99,4 +108,8 @@ span {
 
 .hidden {
     display: none !important
+}
+
+.text-center {
+    text-align: center;
 }
